@@ -1,22 +1,24 @@
 'use strict';
 
-describe('Controller: AboutCtrl', function () {
+describe('Controller: TimmersController', function () {
 
   // load the controller's module
   beforeEach(module('flipkartApp'));
 
-  var AboutCtrl,
+  var trimmersController,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    AboutCtrl = $controller('AboutCtrl', {
+    trimmersController = $controller('TrimmersController', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
-  });
+it("injection tests", function() {
+  expect( trimmersController ).toBeDefined();
 });
+
+});
+

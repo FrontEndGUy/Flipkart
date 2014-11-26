@@ -23,8 +23,8 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
+      .when('/trimmers', {
+        templateUrl: 'views/trimmers.html',
         controller: 'AboutCtrl'
       })
       .otherwise({
