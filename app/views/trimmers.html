@@ -1,1 +1,20 @@
 <p>This is the Trimmers view.</p>
+
+<div class="list-group">
+
+	<div class="list-group-item product-item"
+		 data-ng-repeat="trimmer in trimmers">
+		<img data-ng-src="{{trimmer.src}}" />
+
+		<div>	
+			<div class="title">{{trimmer.title}}</div>
+			<div class="price">{{trimmer.price}}</div>
+		</div>
+
+		<ul class="configuration">
+			<li ng-repeat="item in trimmer.configuration">{{item}}</li>
+		</ul>
+
+	</div>
+
+</div>
